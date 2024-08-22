@@ -55,7 +55,11 @@ function Register() {
     if (Object.keys(validErrors).length === 0) {
       axios.post('http://localhost:3001/user', formdata)
         .then(result => alert('Bạn đã đăng ký thành công'))
-        .then(() => navigate('/login'));
+        .then(() => navigate('/login'))
+        .catch(error => {
+          // Xử lý lỗi
+          console.error('Có lỗi xảy ra:', error.message);
+        })
     }
   };
 

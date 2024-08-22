@@ -8,6 +8,9 @@ import Albums from "../Albums";
 import Artists from "../Artists";
 import Register from "../Register";
 import Login from "../Login";
+import AdminDashboard from "../AdminDashboard"
+import ArtistDashboard from "../ArtistDashboard";
+import ListenerDashboard from "../ListenerDashboard";
 
 
 
@@ -40,6 +43,9 @@ const router = createBrowserRouter([
     },
     {path: "/register", element: <Register/> },
     {path: "/login", element: <Login/>},
+    {path: "/admin-dashboard", element: <AdminDashboard/>},
+    {path: "/artist-dashboard", element: <ArtistDashboard/>},
+    {path: "/listener-dashboard", element: <ListenerDashboard/>},
   ]);
 
   export default router

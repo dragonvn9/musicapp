@@ -6,7 +6,8 @@
       "lastname": "thuan",
       "email": "vutuanthai.hcm@gmail.com",
       "password": "355371",
-      "confirmpassword": "355371"
+      "confirmpassword": "355371",
+      "role": "Admin"
     },
     {
       "id": "5dad",
@@ -33,6 +34,33 @@
       "password": "123499",
       "confirmpassword": "123499",
       "role": "Artist"
+    },
+    {
+      "id": "e42c",
+      "firstname": "loi",
+      "lastname": "quai",
+      "email": "loigi@gmail.com",
+      "password": "900800",
+      "confirmpassword": "900800",
+      "role": "Artist"
+    },
+    {
+      "id": "4a36",
+      "firstname": "new",
+      "lastname": "test",
+      "email": "testnew@gmail.com",
+      "password": "700900",
+      "confirmpassword": "700900",
+      "role": "Artist"
+    },
+    {
+      "id": "c02d",
+      "firstname": "lam",
+      "lastname": "lai",
+      "email": "lannua@gmail.com",
+      "password": "100900",
+      "confirmpassword": "100900",
+      "role": "Listener"
     }
   ]
 }

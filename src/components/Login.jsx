@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Đảm bảo bạn đã nhập Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
 
 function Login() {
+
   const [formdata, setFormdata] = useState({
     email: '',
     password: '',
-    role: '', 
   });
 
   const [errors, setErrors] = useState({});
@@ -32,13 +32,24 @@ function Login() {
       validErrors.password = 'Password cần tối thiểu 6 ký tự';
     }
 
+    //const reponse = await axios.get('http://localhost:3001/user')
+
     axios.get('http://localhost:3001/user')
       .then(result => {
-        result.data.map(user=> {
+        result.data.find(user=> {
           if (user.email=== formdata.email ) {
             if(user.password === formdata.password) {
               alert('Đăng nhập thành công')
-              navigate('/')
+              localStorage.setItem('user', JSON.stringify(user))
+              //navigate('/')
+              if (user.role==='Admin'){
+                navigate('/admin-dashboard')
+              } else if(user.role==='Artist') {
+                navigate('/artist-dashboard')
+              }
+              else if (user.role==='Listener') {
+                navigate('/listener-dashboard')
+              }
             } else {
               isvalid = false;
               validErrors.password = "Sai Password"

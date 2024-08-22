@@ -115,7 +115,7 @@ function Home() {
           <div className='header-items d-flex align-items-center ms-5 gap-3'>
             <Link to="#about" className='about text-decoration-none text-light me-2 fs-4'>About</Link>
             <Link to="#contact" className='contact text-decoration-none text-light me-2 fs-4'>Contact</Link>
-            <Link to="#premuim" className='premuim text-decoration-none text-light fs-4'>Premuim</Link>
+            <Link onClick={() => navigate('/admin-dashboard')} to="#premuim" className='premuim text-decoration-none text-light fs-4'>Premuim</Link>
           </div>
           <div className="header-right d-flex">
             <Link onClick={() => navigate('/login')}  to="#login" className='login btn btn-dark text-light me-2 fs-5'>Login</Link>
