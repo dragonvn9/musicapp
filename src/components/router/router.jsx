@@ -17,6 +17,8 @@ import Songs from "../dashboard/Songs";
 import Playsists from "../dashboard/Playsists";
 import Comments from "../dashboard/Comments";
 import Announcements from "../dashboard/Announcements";
+import AddNewArtist from "../dashboard/AddNewArtist";
+import EditArtist from "../dashboard/EditArtist";
 
 
 
@@ -85,6 +87,9 @@ const router = createBrowserRouter([
 
     {path: "/artist-dashboard", element: <ArtistDashboard/>},
     {path: "/listener-dashboard", element: <ListenerDashboard/>},
+    {path: "/add-new-artist", element: <AddNewArtist/>},
+    {path: "/edit-artist/:id", element: <EditArtist/>},
+
   ]);
 
   export default router

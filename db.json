@@ -19,35 +19,8 @@
       "role": "Listener"
     },
     {
-      "id": "84aa",
-      "firstname": "Thanh",
-      "lastname": "Thao",
-      "email": "thanhthao@gmail.com",
-      "password": "355371",
-      "confirmpassword": "355371",
-      "role": "Artist"
-    },
-    {
-      "id": "653e",
-      "firstname": "Tien",
-      "lastname": "Hai",
-      "email": "vantien@yahoo.com",
-      "password": "123499",
-      "confirmpassword": "123499",
-      "role": "Artist"
-    },
-    {
-      "id": "e42c",
-      "firstname": "Loi",
-      "lastname": "Quai",
-      "email": "loigi@gmail.com",
-      "password": "900800",
-      "confirmpassword": "900800",
-      "role": "Artist"
-    },
-    {
       "id": "4a36",
-      "firstname": "New",
+      "firstname": "New neww lăm",
       "lastname": "Test",
       "email": "testnew@gmail.com",
       "password": "700900",
@@ -62,30 +35,125 @@
       "password": "100900",
       "confirmpassword": "100900",
       "role": "Listener"
+    },
+    {
+      "id": "8b5f",
+      "firstname": "new",
+      "lastname": "artist",
+      "email": "vutuanthai.new@gmail.com",
+      "password": "890890",
+      "confirmpassword": "890890",
+      "role": "Artist"
+    },
+    {
+      "id": "a3ab",
+      "firstname": "new2",
+      "lastname": "artist2",
+      "email": "eeevutuanthai.new@gmail.com",
+      "password": "123400",
+      "confirmpassword": "123400",
+      "role": "Artist"
     }
   ],
   "songs": [
-    { "id": 1, "title": "Song One", "artistId": "84aa", "description": "Description for Song One" },
-    { "id": 2, "title": "Song Two", "artistId": "653e", "description": "Description for Song Two" },
-    { "id": 3, "title": "Song Three", "artistId": "84aa", "description": "Description for Song Three" },
-    { "id": 4, "title": "Song Four", "artistId": "653e", "description": "Description for Song Four" }
+    {
+      "id": "1",
+      "title": "Song One",
+      "artistId": "84aa",
+      "description": "Description for Song One"
+    },
+    {
+      "id": "2",
+      "title": "Song Two",
+      "artistId": "653e",
+      "description": "Description for Song Two"
+    },
+    {
+      "id": "3",
+      "title": "Song Three",
+      "artistId": "84aa",
+      "description": "Description for Song Three"
+    },
+    {
+      "id": "4",
+      "title": "Song Four",
+      "artistId": "653e",
+      "description": "Description for Song Four"
+    }
   ],
   "tracks": [
-    { "id": 1, "songId": 1, "url": "https://example.com/song1.mp3" },
-    { "id": 2, "songId": 2, "url": "https://example.com/song2.mp3" },
-    { "id": 3, "songId": 3, "url": "https://example.com/song3.mp3" },
-    { "id": 4, "songId": 4, "url": "https://example.com/song4.mp3" }
+    {
+      "id": "1",
+      "songId": 1,
+      "url": "https://example.com/song1.mp3"
+    },
+    {
+      "id": "2",
+      "songId": 2,
+      "url": "https://example.com/song2.mp3"
+    },
+    {
+      "id": "3",
+      "songId": 3,
+      "url": "https://example.com/song3.mp3"
+    },
+    {
+      "id": "4",
+      "songId": 4,
+      "url": "https://example.com/song4.mp3"
+    }
   ],
   "comments": [
-    { "id": 1, "songId": 1, "listenerId": "c02d", "content": "Great song!" },
-    { "id": 2, "songId": 2, "listenerId": "c02d", "content": "I love this track!" }
+    {
+      "id": "1",
+      "songId": 1,
+      "listenerId": "c02d",
+      "content": "Great song!"
+    },
+    {
+      "id": "2",
+      "songId": 2,
+      "listenerId": "c02d",
+      "content": "I love this track!"
+    }
   ],
   "playlists": [
-    { "id": 1, "name": "My Favorite Songs", "listenerId": "c02d", "songIds": [1, 2] },
-    { "id": 2, "name": "Chill Vibes", "listenerId": "c02d", "songIds": [2] }
+    {
+      "id": "1",
+      "name": "My Favorite Songs",
+      "listenerId": "c02d",
+      "songIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Chill Vibes",
+      "listenerId": "c02d",
+      "songIds": [
+        2
+      ]
+    }
   ],
   "albums": [
-    { "id": 1, "name": "First Album", "artistId": "84aa", "songIds": [1, 3] },
-    { "id": 2, "name": "Second Album", "artistId": "653e", "songIds": [2, 4] }
+    {
+      "id": "1",
+      "name": "First Album",
+      "artistId": "84aa",
+      "songIds": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Second Album",
+      "artistId": "653e",
+      "songIds": [
+        2,
+        4
+      ]
+    }
   ]
 }
