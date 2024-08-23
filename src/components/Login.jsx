@@ -32,9 +32,7 @@ function Login() {
       validErrors.password = 'Password cần tối thiểu 6 ký tự';
     }
 
-    //const reponse = await axios.get('http://localhost:3001/user')
-
-    axios.get('http://localhost:3001/user')
+    axios.get('http://localhost:3005/users')
       .then(result => {
         result.data.find(user=> {
           if (user.email=== formdata.email ) {
@@ -62,6 +60,11 @@ function Login() {
         setValid(isvalid);
         setErrors(validErrors);
       })
+      .catch(error => {
+        console.error('Có lỗi xảy ra:', error);
+        
+        alert('Đăng ký không thành công, vui lòng kiểm tra lại thông tin.');
+      });
       
   };
 

@@ -1,122 +1,56 @@
 import React from 'react'
 import './adminDashboard.css'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
+
 
 function AdminDashboard() {
+    const navigate = useNavigate();
     return (
-        <div className='view-port d-flex min-vh-100'>
+        <div className='view d-flex min-vh-100'>
 
             <div className='bg-white sidebar p-2' style={{ width: '220px' }}>
                 <div className='m-2'>
-                    <i className='bi bi-bootstrap-fill me-2 fs-4'></i>
+                    <i class="bi bi-speedometer fs-5 me-2"></i>
                     <span className='brand-name fs-4'>Admin</span>
                 </div>
                 <hr className='text-dark' />
                 <div className='list-group list-group-flush'>
-                    <a className='list-group-item py-2'>
-                        <i className='bi bi-speedometer2 fs-5 me-2'></i>
-                        <span className="fs-5">Dashboard</span>
-                    </a>
-                    <a className='list-group-item py-2'>
-                        <i className='bi bi-house fs-5 me-2'></i>
+                    <Link to="/" className='list-group-item py-2' >
+                        <i className='bi bi-house-door fs-5 me-2'></i>
                         <span className="fs-5">Home</span>
+                    </Link>
+                    <Link to="/admin-dashboard/artist-users" className='list-group-item py-2' >
+                        <i className='bi bi-person-plus fs-5 me-2'></i>
+                        <span className="fs-5">Artist Users</span>
+                    </Link>
+                    <a className='list-group-item py-2'>
+                        <i className='bi bi-people fs-5 me-2'></i>
+                        <span className="fs-5">Listener Users</span>
                     </a>
                     <a className='list-group-item py-2'>
-                        <i className='bi bi-table fs-5 me-2'></i>
-                        <span className="fs-5">Products</span>
+                        <i className='bi bi-file-music fs-5 me-2'></i>
+                        <span className="fs-5">Songs List</span>
                     </a>
                     <a className='list-group-item py-2'>
-                        <i className='bi bi-table fs-5 me-2'></i>
-                        <span className="fs-5">Products</span>
+                        <i className='bi bi-music-note-list fs-5 me-2'></i>
+                        <span className="fs-5">Playlists</span>
                     </a>
                     <a className='list-group-item py-2'>
-                        <i className='bi bi-table fs-5 me-2'></i>
-                        <span className="fs-5">Products</span>
+                        <i className='bi bi-journal-album fs-5 me-2'></i>
+                        <span className="fs-5">Albums</span>
                     </a>
                     <a className='list-group-item py-2'>
-                        <i className='bi bi-table fs-5 me-2'></i>
-                        <span className="fs-5">Products</span>
+                        <i className='bi bi-chat-left-quote fs-5 me-2'></i>
+                        <span className="fs-5">Comments</span>
+                    </a>
+                    <a className='list-group-item py-2'>
+                        <i className='bi bi-megaphone fs-5 me-2'></i>
+                        <span className="fs-5">Announcements</span>
                     </a>
                 </div>
             </div>
-            <div className="layout-main flex-grow-1 d-flex flex-column p-3 bg-light">
-                <table className="table caption-top bg-white rounded mt-2">
-                    <caption className="fs-4 mb-1 mt-1">Recent Orders</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <table className="table caption-top bg-white rounded mt-1">
-                    <caption className="fs-4 mb-1 mt-1">Recent Orders</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-
+            <div className=" flex-grow-1">
+                <Outlet />
             </div>
 
         </div>

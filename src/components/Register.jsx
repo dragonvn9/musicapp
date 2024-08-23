@@ -53,7 +53,7 @@ function Register() {
     setErrors(validErrors);
 
     if (Object.keys(validErrors).length === 0) {
-      axios.post('http://localhost:3001/user', formdata)
+      axios.post('http://localhost:3005/users', formdata)
         .then(result => alert('Bạn đã đăng ký thành công'))
         .then(() => navigate('/login'))
         .catch(error => {
