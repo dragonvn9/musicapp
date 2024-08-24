@@ -22,11 +22,11 @@ function AdminDashboard() {
                     <Link to="/admin-dashboard/artist-users" className='list-group-item py-2' >
                         <i className='bi bi-person-plus fs-5 me-2'></i>
                         <span className="fs-5">Artist Users</span>
-                    </Link>
-                    <a className='list-group-item py-2'>
+                    </Link >
+                    <Link to="/admin-dashboard/listener-users" className='list-group-item py-2'>
                         <i className='bi bi-people fs-5 me-2'></i>
                         <span className="fs-5">Listener Users</span>
-                    </a>
+                    </Link>
                     <a className='list-group-item py-2'>
                         <i className='bi bi-file-music fs-5 me-2'></i>
                         <span className="fs-5">Songs List</span>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
-function EditArtist() {
+function EditListener() {
   const { id } = useParams();
   console.log(id)
   const [formdata, setFormdata] = useState({
@@ -86,7 +86,7 @@ function EditArtist() {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h3 className="card-title text-center">Edit Artist</h3>
+              <h3 className="card-title text-center">Edit Listener</h3>
               <div>
                 {!valid && 
                   <span className="text-danger">
@@ -159,4 +159,4 @@ function EditArtist() {
   );
 }
 
-export default EditArtist;
+export default EditListener;

@@ -10,15 +10,6 @@
       "role": "Admin"
     },
     {
-      "id": "5dad",
-      "firstname": "Thu",
-      "lastname": "Minh",
-      "email": "minhthu@gmail.com",
-      "password": "908722",
-      "confirmpassword": "908722",
-      "role": "Listener"
-    },
-    {
       "id": "4a36",
       "firstname": "New neww lăm",
       "lastname": "Test",
@@ -35,24 +26,6 @@
       "password": "100900",
       "confirmpassword": "100900",
       "role": "Listener"
-    },
-    {
-      "id": "8b5f",
-      "firstname": "new",
-      "lastname": "artist",
-      "email": "vutuanthai.new@gmail.com",
-      "password": "890890",
-      "confirmpassword": "890890",
-      "role": "Artist"
-    },
-    {
-      "id": "a3ab",
-      "firstname": "new2",
-      "lastname": "artist2",
-      "email": "eeevutuanthai.new@gmail.com",
-      "password": "123400",
-      "confirmpassword": "123400",
-      "role": "Artist"
     }
   ],
   "songs": [

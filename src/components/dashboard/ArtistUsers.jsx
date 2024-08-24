@@ -13,6 +13,7 @@ function ArtistUsers() {
       .then(response => {
         setUsers(response.data)
         //console.log(users)
+        setError(null)
       })
       .catch(error => {
         console.error('Có lỗi xảy ra:', error);
@@ -26,17 +27,18 @@ function ArtistUsers() {
     try {
       await axios.delete(`http://localhost:3005/users/${id}`)
       alert(`xoá thành công user : ${id}`)
-      ArtistUsers()
+      setUsers(users.filter(user => user.id !== id))
     }
     catch(error) {
       alert(`xoá không thành công user : ${id}`)
+      setError(`xoá không thành công user : ${id}`)
     }
 
   }
 
-
   return (
     <div >
+      {error && <div className="error-message">{error}</div>}
       <h3 className='mt-2'>Artist Users Management</h3>
       <div className='d-flex align-items-center mb-1'>
         <div className="fs-4 mb-1 mt-1 me-4">List Artist</div>

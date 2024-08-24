@@ -19,6 +19,8 @@ import Comments from "../dashboard/Comments";
 import Announcements from "../dashboard/Announcements";
 import AddNewArtist from "../dashboard/AddNewArtist";
 import EditArtist from "../dashboard/EditArtist";
+import AddNewListener from "../dashboard/AddNewListener";
+import EditListener from "../dashboard/EditListener";
 
 
 
@@ -89,6 +91,8 @@ const router = createBrowserRouter([
     {path: "/listener-dashboard", element: <ListenerDashboard/>},
     {path: "/add-new-artist", element: <AddNewArtist/>},
     {path: "/edit-artist/:id", element: <EditArtist/>},
+    {path: "/add-new-listener", element: <AddNewListener/>},
+    {path: "/edit-listener/:id", element: <EditListener/>},
 
   ]);
 
