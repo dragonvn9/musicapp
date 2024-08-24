@@ -27,10 +27,10 @@ function AdminDashboard() {
                         <i className='bi bi-people fs-5 me-2'></i>
                         <span className="fs-5">Listener Users</span>
                     </Link>
-                    <a className='list-group-item py-2'>
+                    <Link to="/admin-dashboard/song-list" className='list-group-item py-2'>
                         <i className='bi bi-file-music fs-5 me-2'></i>
                         <span className="fs-5">Songs List</span>
-                    </a>
+                    </Link >
                     <a className='list-group-item py-2'>
                         <i className='bi bi-music-note-list fs-5 me-2'></i>
                         <span className="fs-5">Playlists</span>

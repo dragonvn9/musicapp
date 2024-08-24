@@ -55,7 +55,7 @@ function AddNewListener() {
     if (Object.keys(validErrors).length === 0) {
       axios.post('http://localhost:3005/users', formdata)
         .then(result => alert('Bạn đã thêm mới thành công'))
-        .then(() => navigate('/admin-dashboard'))
+        .then(() => navigate('/admin-dashboard/listener-users'))
         .catch(error => {
           // Xử lý lỗi
           console.error('Có lỗi xảy ra:', error.message);

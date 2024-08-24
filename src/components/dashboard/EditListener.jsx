@@ -19,10 +19,10 @@ function EditListener() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:3005/users/` + id)
+      axios.get(`http://localhost:3005/users/` +id)
         .then(response => {
           setFormdata(response.data);
-          //console.log(response.data);
+          //console.log(formdata);
         })
         .catch(error => {
           console.error('Có lỗi xảy ra:', error.message);
@@ -72,7 +72,7 @@ function EditListener() {
       axios.put(`http://localhost:3005/users/` + id, formdata)
         .then(() => {
           alert('Cập nhật thành công');
-          navigate('/admin-dashboard'); 
+          navigate('/admin-dashboard/listener-users'); 
         })
         .catch(error => {
           console.error('Có lỗi xảy ra:', error.message);

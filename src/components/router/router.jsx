@@ -21,6 +21,9 @@ import AddNewArtist from "../dashboard/AddNewArtist";
 import EditArtist from "../dashboard/EditArtist";
 import AddNewListener from "../dashboard/AddNewListener";
 import EditListener from "../dashboard/EditListener";
+import AddNewSong from "../dashboard/AddNewSong";
+import EditSong from "../dashboard/EditSong";
+
 
 
 
@@ -64,7 +67,7 @@ const router = createBrowserRouter([
           element: <ListenerUsers/>,
         },
         {
-          path: "songs",
+          path: "song-list",
           element: <Songs/>,
         },
         {
@@ -86,13 +89,63 @@ const router = createBrowserRouter([
 
       ]
     },
+    {path: "/artist-dashboard", element: <ArtistDashboard/>,
+      children: [
+        {
+          path: "listener-users",
+          element: <ListenerUsers/>,
+        },
+        {
+          path: "song-list",
+          element: <Songs/>,
+        },
+        {
+          path: "albums",
+          element: <Albums/>,
+        },
+        {
+          path: "comments",
+          element: <Comments/>,
+        },
+        {
+          path: "announcements",
+          element: <Announcements/>,
+        },
 
-    {path: "/artist-dashboard", element: <ArtistDashboard/>},
-    {path: "/listener-dashboard", element: <ListenerDashboard/>},
+      ]
+    },
+    {path: "/listener-dashboard", element: <ListenerDashboard/>,
+      children: [
+        {
+          path: "song-list",
+          element: <Songs/>,
+        },
+        {
+          path: "albums",
+          element: <Albums/>,
+        },
+        {
+          path: "comments",
+          element: <Comments/>,
+        },
+        {
+          path: "announcements",
+          element: <Announcements/>,
+        },
+
+      ]
+    },
+
+    
+    
     {path: "/add-new-artist", element: <AddNewArtist/>},
     {path: "/edit-artist/:id", element: <EditArtist/>},
     {path: "/add-new-listener", element: <AddNewListener/>},
     {path: "/edit-listener/:id", element: <EditListener/>},
+    {path: "/add-new-song", element: <AddNewSong/>},
+    {path: "/edit-song/:id", element: <EditSong/>},
+    
+    
 
   ]);
 

@@ -113,8 +113,8 @@ function Home() {
         <div className="header-bar d-flex align-items-center mb-4 mt-3">
           <input type="text" placeholder="Tìm kiếm..." name="search" className='search-box form-control me-3' style={{ maxWidth: '359px' }} />
           <div className='header-items d-flex align-items-center ms-5 gap-3'>
-            <Link to="#about" className='about text-decoration-none text-light me-2 fs-4'>About</Link>
-            <Link to="#contact" className='contact text-decoration-none text-light me-2 fs-4'>Contact</Link>
+            <Link onClick={() => navigate('/listener-dashboard')} to="#about" className='about text-decoration-none text-light me-2 fs-4'>About</Link>
+            <Link onClick={() => navigate('/artist-dashboard')} to="#contact" className='contact text-decoration-none text-light me-2 fs-4'>Contact</Link>
             <Link onClick={() => navigate('/admin-dashboard')} to="#premuim" className='premuim text-decoration-none text-light fs-4'>Premuim</Link>
           </div>
           <div className="header-right d-flex">

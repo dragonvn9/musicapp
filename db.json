@@ -26,21 +26,18 @@
       "password": "100900",
       "confirmpassword": "100900",
       "role": "Listener"
+    },
+    {
+      "id": "1286",
+      "firstname": "them moi t090",
+      "lastname": "test",
+      "email": "vutuaeeenthai.hcm@gmail.com",
+      "password": "123900",
+      "confirmpassword": "123900",
+      "role": "Artist"
     }
   ],
   "songs": [
-    {
-      "id": "1",
-      "title": "Song One",
-      "artistId": "84aa",
-      "description": "Description for Song One"
-    },
-    {
-      "id": "2",
-      "title": "Song Two",
-      "artistId": "653e",
-      "description": "Description for Song Two"
-    },
     {
       "id": "3",
       "title": "Song Three",
@@ -52,6 +49,24 @@
       "title": "Song Four",
       "artistId": "653e",
       "description": "Description for Song Four"
+    },
+    {
+      "id": "2b29",
+      "title": "hat",
+      "artistId": "7890",
+      "description": "dvdfbdfnbfgn"
+    },
+    {
+      "id": "189c",
+      "title": "moi",
+      "artistId": "test song",
+      "description": "dvdvdfbdfb"
+    },
+    {
+      "id": "d0fa",
+      "title": "moi 2",
+      "artistId": "89065",
+      "description": "fb gcvnvn xgvdgdg"
     }
   ],
   "tracks": [
