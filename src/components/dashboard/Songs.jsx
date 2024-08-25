@@ -8,7 +8,7 @@ function Songs() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    //code side effect
+   
     axios.get('http://localhost:3005/songs')
       .then(Response => {
         setSongs(Response.data)
@@ -34,7 +34,6 @@ function Songs() {
     }
 
   }
-
 
 
   return (

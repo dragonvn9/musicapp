@@ -33,11 +33,9 @@ function Home() {
   }, []);
 
   const handleLogout = () => {
-    // Xoá các mục trong localStorage
     localStorage.removeItem('userToken');
     localStorage.removeItem('userData');
-
-    // Điều hướng về trang đăng nhập
+    
     navigate('/login');
   };
 
@@ -123,7 +121,7 @@ function Home() {
           </li>
           <li className='box-2 d-flex align-items-center mb-2'>
             <img src={icon08} alt="" className="icon-side me-2" />
-            <button onClick={handleLogout} className='text-white text-decoration-none fs-4'>Logout</button>
+            <button onClick={handleLogout} className=' fs-4'>Logout</button>
           </li>
         </ul>
       </div>

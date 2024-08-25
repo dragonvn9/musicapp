@@ -57,7 +57,6 @@ function Register() {
         .then(result => alert('Bạn đã đăng ký thành công'))
         .then(() => navigate('/login'))
         .catch(error => {
-          // Xử lý lỗi
           console.error('Có lỗi xảy ra:', error.message);
         })
     }

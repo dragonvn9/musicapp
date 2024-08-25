@@ -10,24 +10,6 @@
       "role": "Admin"
     },
     {
-      "id": "4a36",
-      "firstname": "New neww lăm",
-      "lastname": "Test",
-      "email": "testnew@gmail.com",
-      "password": "700900",
-      "confirmpassword": "700900",
-      "role": "Artist"
-    },
-    {
-      "id": "c02d",
-      "firstname": "Lam",
-      "lastname": "Lai",
-      "email": "lannua@gmail.com",
-      "password": "100900",
-      "confirmpassword": "100900",
-      "role": "Listener"
-    },
-    {
       "id": "1286",
       "firstname": "them moi t090",
       "lastname": "test",
@@ -62,6 +44,24 @@
       "password": "900900",
       "confirmpassword": "900900",
       "role": "Listener"
+    },
+    {
+      "id": "aef0",
+      "firstname": "tuan",
+      "lastname": "thai",
+      "email": "tuanthai@gmail.com",
+      "password": "900900",
+      "confirmpassword": "900900",
+      "role": "Artist"
+    },
+    {
+      "id": "aa1f",
+      "firstname": "new5",
+      "lastname": "new7",
+      "email": "vutuanfggthai.hcm@gmail.com",
+      "password": "900900",
+      "confirmpassword": "900900",
+      "role": "Artist"
     }
   ],
   "songs": [

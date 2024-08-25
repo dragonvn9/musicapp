@@ -66,7 +66,7 @@ function Albums() {
     console.log('Favorite button clicked');
   };
 
-  // Danh sách bài hát
+
   const songList = [
     {
       title: 'Song Title 1',
