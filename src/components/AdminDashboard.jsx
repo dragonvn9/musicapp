@@ -8,14 +8,14 @@ function AdminDashboard() {
     return (
         <div className='view d-flex min-vh-100'>
 
-            <div className='bg-white sidebar p-2' style={{ width: '220px' }}>
-                <div className='m-2'>
+            <div className='bg-white sidebar p-2 border' style={{ width: '220px' }}>
+                <div className='m-1'>
                     <i class="bi bi-speedometer fs-5 me-2"></i>
                     <span className='brand-name fs-4'>Admin</span>
                 </div>
                 <hr className='text-dark' />
                 <div className='list-group list-group-flush'>
-                    <Link to="/" className='list-group-item py-2' >
+                    <Link to="/" className='list-group-item py-2 bg-primary' >
                         <i className='bi bi-house-door fs-5 me-2'></i>
                         <span className="fs-5">Home</span>
                     </Link>

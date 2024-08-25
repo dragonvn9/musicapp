@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './home.css'; 
+import './home.css';
 import { useNavigate, Link, Outlet } from 'react-router-dom';
 import icon01 from '../components/images/Vector -favourite.png';
 import icon02 from '../components/images/add-playsist.png';
@@ -15,19 +15,38 @@ import icon08 from '../components/images/logout.png';
 import icon09 from '../components/images/most player.png';
 import icon10 from '../components/images/setting.png';
 
-
 function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    
+
     const elements = document.querySelectorAll('.box-icon, .box-discover, .box-albums, .box-artists');
 
     elements.forEach((element) => {
-      element.addEventListener('click', function() {
-        
+      element.addEventListener('click', function () {
+
         elements.forEach((el) => el.classList.remove('active-effect'));
-      
+
+        element.classList.add('active-effect');
+      });
+    });
+  }, []);
+
+  const handleLogout = () => {
+    // Xoá các mục trong localStorage
+    localStorage.removeItem('userToken');
+    localStorage.removeItem('userData');
+
+    // Điều hướng về trang đăng nhập
+    navigate('/login');
+  };
+
+  useEffect(() => {
+    const elements = document.querySelectorAll('.box-icon, .box-discover, .box-albums, .box-artists');
+
+    elements.forEach((element) => {
+      element.addEventListener('click', function () {
+        elements.forEach((el) => el.classList.remove('active-effect'));
         element.classList.add('active-effect');
       });
     });
@@ -92,7 +111,7 @@ function Home() {
             <Link to="#" className='text-white text-decoration-none d-flex align-items-center'>
               <img src={icon01} alt="" className="icon-side me-2" />
               <span className="text-link text-light fs-4">Add playlist</span>
-            </Link> 
+            </Link>
           </li>
         </ul>
 
@@ -104,7 +123,7 @@ function Home() {
           </li>
           <li className='box-2 d-flex align-items-center mb-2'>
             <img src={icon08} alt="" className="icon-side me-2" />
-            <Link to="#" className='text-white text-decoration-none fs-4'>Logout</Link>
+            <button onClick={handleLogout} className='text-white text-decoration-none fs-4'>Logout</button>
           </li>
         </ul>
       </div>
@@ -118,27 +137,27 @@ function Home() {
             <Link onClick={() => navigate('/admin-dashboard')} to="#premuim" className='premuim text-decoration-none text-light fs-4'>Premuim</Link>
           </div>
           <div className="header-right d-flex">
-            <Link onClick={() => navigate('/login')}  to="#login" className='login btn btn-dark text-light me-2 fs-5'>Login</Link>
-            <Link onClick={() => navigate('/register')}  to="#signup" className='sign-up btn btn-primary text-light fs-5'>Sign Up</Link>
+            <Link onClick={() => navigate('/login')} to="#login" className='login btn btn-dark text-light me-2 fs-5'>Login</Link>
+            <Link onClick={() => navigate('/register')} to="#signup" className='sign-up btn btn-primary text-light fs-5'>Sign Up</Link>
           </div>
         </div>
-        <div className="couser"></div>
+
 
         <div className="layout-body-main flex-grow-1">
           <Outlet />
         </div>
 
-            {/* Footer content */}
+        {/* Footer content */}
         <footer className="text-white mt-auto py-4">
           <div className="container">
             <div className="row">
-              
+
               <div className="col-lg-4 col-md-6 mb-4">
                 <h5 className="fw-bold fs-3">About</h5>
                 <p className='text-long'>Melodies is a website that has been created for over 5 years now and it is one of the most famous music player websites in the world. In this website, you can listen and download songs for free. Also if you want no limitation you can buy our <span className="text-primary">premium pass's</span>.</p>
               </div>
 
-              
+
               <div className="col-lg-2 col-md-3 mb-4">
                 <h5 className="custom-underline fw-bold text-decoration-underline fs-3">Melodies</h5>
                 <ul className="list-unstyled">
@@ -148,7 +167,7 @@ function Home() {
                 </ul>
               </div>
 
-              
+
               <div className="col-lg-2 col-md-3 mb-4">
                 <h5 className="custom-underline fw-bold text-decoration-underline fs-3">Access</h5>
                 <ul className="list-unstyled">
@@ -160,7 +179,7 @@ function Home() {
                 </ul>
               </div>
 
-              
+
               <div className="col-lg-2 col-md-3 mb-4">
                 <h5 className="custom-underline fw-bold text-decoration-underline fs-3">Contact</h5>
                 <ul className="list-unstyled">
@@ -171,7 +190,7 @@ function Home() {
                 </ul>
               </div>
 
-              
+
               <div className="col-lg-2 col-md-3 mb-4 text-end">
                 <h5 className="melodies-footer">Melodies</h5>
                 <div className="d-flex justify-content-end gap-3">
@@ -183,10 +202,10 @@ function Home() {
             </div>
           </div>
         </footer>
-  
-        </div>
+
       </div>
-    );
-  }
-  
-  export default Home;
+    </div>
+  );
+}
+
+export default Home;

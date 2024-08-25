@@ -23,6 +23,7 @@ import AddNewListener from "../dashboard/AddNewListener";
 import EditListener from "../dashboard/EditListener";
 import AddNewSong from "../dashboard/AddNewSong";
 import EditSong from "../dashboard/EditSong";
+import Logout from "../Logout";
 
 
 
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
     },
     {path: "/register", element: <Register/> },
     {path: "/login", element: <Login/>},
+    {path: "/logout", element: <Logout/>},
     {path: "/admin-dashboard", element: <AdminDashboard/>,
       children: [
         {

@@ -1,0 +1,7 @@
+.album_image {
+    width: 100%; /* Đảm bảo ảnh album chiếm toàn bộ chiều rộng có sẵn */
+    max-height: 100vh; /* Đảm bảo chiều cao của ảnh không vượt quá chiều cao của màn hình */
+    object-fit: cover; /* Giữ tỷ lệ của ảnh, cắt phần thừa nếu cần để lấp đầy vùng */
+}
+
+

@@ -53,6 +53,7 @@ function ListenerUsers() {
               <th scope="col">Last Name</th>
               <th scope="col">Email</th>
               <th scope="col">Password</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>

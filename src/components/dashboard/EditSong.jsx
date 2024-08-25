@@ -7,7 +7,7 @@ function EditSong() {
     const [formData, setFormData] = useState({
         title: '',
         artistId: '',
-        description: ''
+        url: ''
     });
     const [errors, setErrors] = useState({});
     const [valid, setValid] = useState(true);
@@ -39,9 +39,9 @@ function EditSong() {
             isValid = false;
             validErrors.artistId = 'Yêu cầu nhập ID nghệ sĩ';
         }
-        if (formData.description === "" || formData.description === null) {
+        if (formData.url === "" || formData.url === null) {
             isValid = false;
-            validErrors.description = 'Yêu cầu nhập mô tả bài hát';
+            validErrors.url = 'Yêu cầu nhập mô tả bài hát';
         }
 
         setValid(isValid);
@@ -71,7 +71,7 @@ function EditSong() {
                       <span className="text-danger">
                         {errors.title && <div>{errors.title}</div>}
                         {errors.artistId && <div>{errors.artistId}</div>}
-                        {errors.description && <div>{errors.description}</div>}
+                        {errors.url && <div>{errors.url}</div>}
                       </span>
                     )}
                   </div>
@@ -99,18 +99,18 @@ function EditSong() {
                       />
                     </div>
                     <div className="form-group mt-2 mb-2">
-                      <label htmlFor="description">Description Song<span className="text-danger">*</span></label>
+                      <label htmlFor="url">url Song<span className="text-danger">*</span></label>
                       <textarea
-                        id="description"
+                        id="url"
                         className="form-control"
                         rows="4"
-                        placeholder="Description Song"
-                        value={formData.description}
-                        onChange={(event) => setFormData({ ...formData, description: event.target.value })}
+                        placeholder="url Song"
+                        value={formData.url}
+                        onChange={(event) => setFormData({ ...formData, url: event.target.value })}
                       ></textarea>
                     </div>
                     <div className="text-right mt-2">
-                      <button type="submit" className="btn btn-primary">Add New</button>
+                      <button type="submit" className="btn btn-primary">Edit Now</button>
                     </div>
                   </form>
                 </div>

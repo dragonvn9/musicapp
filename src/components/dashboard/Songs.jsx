@@ -51,9 +51,9 @@ function Songs() {
             <tr>
               <th scope="col">Serial</th>
               <th scope="col">Id</th>
-              <th scope="col">Tên Bài Hát</th>
-              <th scope="col">Nhạc Sĩ</th>
-              <th scope="col">Description</th>
+              <th scope="col">Song Name</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Url</th>
               <th scope="col">Actions</th>
             </tr>
           </thead>
@@ -64,7 +64,7 @@ function Songs() {
                 <td>{song.id}</td>
                 <td>{song.title}</td>
                 <td>{song.artistId}</td>
-                <td>{song.description}</td>
+                <td>{song.url}</td>
                 <td className='d-flex gap-1'>
                   <Link className='text-decoration-none text-dark' to={`/edit-song/${song.id}`} style={{ background: '#44bee0' }}>Edit Song</Link>
                   <Link onClick={() => deleteSong(song.id)} style={{ background: 'red' }} className='text-decoration-none text-dark'>Delete</Link>

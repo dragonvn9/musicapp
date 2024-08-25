@@ -35,6 +35,33 @@
       "password": "123900",
       "confirmpassword": "123900",
       "role": "Artist"
+    },
+    {
+      "id": "f039",
+      "firstname": "dinh",
+      "lastname": "ngoc",
+      "email": "dungng@gmail.com",
+      "password": "900900",
+      "confirmpassword": "900900",
+      "role": "Artist"
+    },
+    {
+      "id": "7419",
+      "firstname": "lam",
+      "lastname": "phung hoang",
+      "email": "phunghoang9@yahoo.com",
+      "password": "800800",
+      "confirmpassword": "800800",
+      "role": "Listener"
+    },
+    {
+      "id": "1277",
+      "firstname": "chung",
+      "lastname": "so hong",
+      "email": "sohong8@gmail.com",
+      "password": "900900",
+      "confirmpassword": "900900",
+      "role": "Listener"
     }
   ],
   "songs": [
@@ -42,31 +69,31 @@
       "id": "3",
       "title": "Song Three",
       "artistId": "84aa",
-      "description": "Description for Song Three"
+      "url": "https://example.com/song1.mp3"
     },
     {
       "id": "4",
       "title": "Song Four",
       "artistId": "653e",
-      "description": "Description for Song Four"
+      "url": "https://example.com/song2.mp3"
     },
     {
       "id": "2b29",
       "title": "hat",
       "artistId": "7890",
-      "description": "dvdfbdfnbfgn"
+      "url": "https://example.com/song3.mp3"
     },
     {
       "id": "189c",
       "title": "moi",
       "artistId": "test song",
-      "description": "dvdvdfbdfb"
+      "url": "https://example.com/song4.mp3"
     },
     {
       "id": "d0fa",
-      "title": "moi 2",
-      "artistId": "89065",
-      "description": "fb gcvnvn xgvdgdg"
+      "title": "tesst edit",
+      "artistId": "89065adf",
+      "url": "https://example.com/song5.mp3"
     }
   ],
   "tracks": [
